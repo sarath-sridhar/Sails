@@ -33,15 +33,17 @@ module.exports.routes = {
   ***************************************************************************/
 
   '/': {
-    view: 'index'
-   }
+    view: 'index',
+   },
+  'post /create': 'UserController.create',
+  'get /flash':'UserController.flash'
 
+  
    // '/user/new':{//when user gives a request to a page
    //  controller:'UserController',//specity controller u wanna go
    //  action:'new'//specify the action to be performed in a controller
    // }
-  
-
+    
   /***************************************************************************
   *                                                                          *
   * Custom routes here...                                                    *

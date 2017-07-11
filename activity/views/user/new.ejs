@@ -1,3 +1,16 @@
+
 <br>
 
-<h1>new page<h1>
+ 
+<h1>new page</h1>
+
+
+
+
+<% if(flash && flash.err) { %>
+    <ul>
+    <% Object.keys(flash.err).forEach(function(error){ %>
+    <li><%= JSON.stringify(flash.err[error]) %> </li>
+    <% }) %>
+    </ul>
+<% } %>
